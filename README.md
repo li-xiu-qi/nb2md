@@ -4,6 +4,8 @@
 
 nb2md是一个简单而高效的Python工具，用于将Jupyter笔记本(.ipynb文件)批量转换为Markdown格式(.md文件)。该工具采用原生Python实现，无需依赖外部命令行工具，能够保留Jupyter笔记本中的代码块、输出结果以及Markdown文本等内容。
 
+同时，我们也提供了Rust实现版本，具有更高的性能和效率，适合处理大规模笔记本转换任务。
+
 ## 功能特点
 
 - 递归扫描目录，批量转换所有找到的Jupyter笔记本
@@ -14,6 +16,8 @@ nb2md是一个简单而高效的Python工具，用于将Jupyter笔记本(.ipynb�
 
 ## 安装方法
 
+### Python版本
+
 1. 克隆或下载本仓库
 
 ```bash
@@ -22,6 +26,17 @@ cd nb2md
 ```
 
 2. 安装依赖（无需额外依赖，只使用Python标准库）
+
+### Rust版本
+
+如果您希望使用性能更高的Rust实现版本：
+(注意：需要Rust环境)
+
+```bash
+git clone https://github.com/li-xiu-qi/nb2md-rs.git
+cd nb2md-rs
+cargo build --release
+```
 
 ## 使用方法
 
